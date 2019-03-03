@@ -6,7 +6,7 @@ const objExpress = express();
 var mysqlDb = require('./mysqlDb');
 
 objExpress.use(bodyParser.json());
-objExpress.use(bodyParser.urlencoded({ extended: false }));
+objExpress.use(bodyParser.urlencoded({ extended: true }));
 
 let objQuery = {
     getUsers: 'SELECT * FROM users',
